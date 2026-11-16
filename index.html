@@ -12,7 +12,7 @@
 <link rel="icon" href="assets/saif.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+Bengali:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,8 +28,8 @@
 </script>
 <style>
   :root{
-    --bg:#060b16; --panel:#0b1424; --card:#0d182c; --line:#1b2b47;
-    --text:#eaf0f9; --muted:#93a5c0; --cyan:#22d3ee; --violet:#818cf8;
+    --bg:#171016; --panel:#211420; --card:#261822; --line:#3e2534;
+    --text:#fdf0f3; --muted:#c9a6b3; --rose:#fb7185; --amber:#fbbf24;
     --green:#34d399; --pink:#f472b6;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -38,15 +38,15 @@
     font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
     background:var(--bg); color:var(--text); line-height:1.65; overflow-x:hidden;
   }
-  a{color:var(--cyan);text-decoration:none}
+  a{color:var(--rose);text-decoration:none}
   a:hover{text-decoration:underline}
   .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
   h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.01em}
 
-  header{position:sticky;top:0;z-index:20;background:rgba(6,11,22,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  header{position:sticky;top:0;z-index:20;background:rgba(23,16,22,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0}
   nav .logo{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:19px;color:var(--text)}
-  nav .logo em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .logo em{font-style:normal;background:linear-gradient(90deg,var(--rose),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
   nav ul{display:flex;gap:22px;list-style:none}
   nav ul a{color:var(--muted);font-size:14px}
   nav ul a:hover{color:var(--text);text-decoration:none}
@@ -55,48 +55,45 @@
   /* ---- hero ---- */
   .hero{position:relative;padding:84px 0 56px;overflow:hidden}
   #net{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
-  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(720px 420px at 78% 8%, rgba(34,211,238,.14), transparent 60%),radial-gradient(560px 380px at 8% 90%, rgba(129,140,248,.12), transparent 60%);pointer-events:none}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(720px 420px at 78% 8%, rgba(251,113,133,.14), transparent 60%),radial-gradient(560px 380px at 8% 90%, rgba(251,191,36,.12), transparent 60%);pointer-events:none}
   .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center}
   @media(max-width:780px){.hero-inner{grid-template-columns:1fr;padding-top:8px}}
-  .bn{font-family:"Noto Sans Bengali",sans-serif;font-size:clamp(44px,8vw,84px);font-weight:700;line-height:1;
-    background:linear-gradient(92deg,rgba(34,211,238,.9),rgba(129,140,248,.9));
-    -webkit-background-clip:text;background-clip:text;color:transparent;opacity:.95}
   .hero h1{font-size:clamp(40px,6.5vw,64px);line-height:1.02;margin:14px 0 8px}
-  .hero h1 .grad{background:linear-gradient(92deg,var(--cyan) 5%,var(--violet) 60%,var(--pink) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .hero .role{font-family:"Space Grotesk",sans-serif;font-size:20px;font-weight:600;color:var(--cyan);margin-bottom:14px}
+  .hero h1 .grad{background:linear-gradient(92deg,var(--rose) 5%,var(--amber) 60%,var(--pink) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .role{font-family:"Space Grotesk",sans-serif;font-size:20px;font-weight:600;color:var(--rose);margin-bottom:14px}
   .hero p.lede{color:var(--muted);max-width:520px;margin-bottom:24px;font-size:16px}
   .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--green);background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.3);padding:5px 12px;border-radius:999px;margin-bottom:18px}
   .status i{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;box-shadow:0 0 10px var(--green)}
   .btns{display:flex;gap:12px;flex-wrap:wrap}
   .btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;font-size:15px;font-family:"Space Grotesk",sans-serif}
-  .btn-primary{background:linear-gradient(92deg,var(--cyan),var(--violet));color:#06121f}
+  .btn-primary{background:linear-gradient(92deg,var(--rose),var(--amber));color:#2b0f16}
   .btn-primary:hover{text-decoration:none;opacity:.92}
   .btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.02)}
-  .btn-ghost:hover{text-decoration:none;border-color:var(--cyan)}
+  .btn-ghost:hover{text-decoration:none;border-color:var(--rose)}
 
-  .arch{position:relative;border-radius:999px 999px 28px 28px;padding:3px;background:linear-gradient(165deg,var(--cyan),var(--violet) 55%,var(--pink) 95%);box-shadow:0 0 70px rgba(34,211,238,.22)}
+  .arch{position:relative;border-radius:999px 999px 28px 28px;padding:3px;background:linear-gradient(165deg,var(--rose),var(--amber) 55%,var(--pink) 95%);box-shadow:0 0 70px rgba(251,113,133,.22)}
   .arch img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:996px 996px 25px 25px}
-  .arch-chip{position:absolute;left:50%;transform:translateX(-50%);bottom:20px;background:rgba(6,11,22,.88);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px;white-space:nowrap}
-  .arch-chip b{color:var(--cyan)}
+  .arch-chip{position:absolute;left:50%;transform:translateX(-50%);bottom:20px;background:rgba(23,16,22,.88);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:13px;white-space:nowrap}
+  .arch-chip b{color:var(--rose)}
 
   /* ---- marquee ---- */
   .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:14px 0;margin:8px 0 12px;background:rgba(255,255,255,.015)}
   .marquee-track{display:flex;gap:0;width:max-content;animation:scroll 26s linear infinite}
   .marquee span{font-family:"Space Grotesk",sans-serif;font-size:17px;font-weight:600;color:var(--muted);padding:0 18px;white-space:nowrap}
-  .marquee span b{color:var(--cyan);font-weight:600}
+  .marquee span b{color:var(--rose);font-weight:600}
   @keyframes scroll{to{transform:translateX(-50%)}}
 
   section{padding:42px 0}
   h2{font-size:30px;margin-bottom:4px}
-  h2::after{content:"";display:block;width:56px;height:3px;border-radius:2px;margin-top:12px;background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink))}
+  h2::after{content:"";display:block;width:56px;height:3px;border-radius:2px;margin-top:12px;background:linear-gradient(90deg,var(--rose),var(--amber),var(--pink))}
   .sub{color:var(--muted);margin:14px 0 24px;font-size:15px}
   .card{background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0)),var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 26px;margin-bottom:14px;transition:border-color .2s,transform .2s}
-  .card:hover{border-color:rgba(34,211,238,.45);transform:translateY(-2px)}
+  .card:hover{border-color:rgba(251,113,133,.45);transform:translateY(-2px)}
   .card h3{font-size:19px;margin-bottom:4px}
   .card .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
-  .card p{color:#c6d2e4;font-size:15px}
+  .card p{color:#e3cdd4;font-size:15px}
   .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  .tag{font-size:12px;background:#16233d;border:1px solid var(--line);color:var(--muted);padding:3px 10px;border-radius:999px}
+  .tag{font-size:12px;background:#2f1a26;border:1px solid var(--line);color:var(--muted);padding:3px 10px;border-radius:999px}
   .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
   .bento .card{margin-bottom:0}
   .bento .span6{grid-column:span 6}
@@ -107,13 +104,13 @@
   @media(max-width:760px){.grid3{grid-template-columns:1fr}}
   .skill-list{display:flex;flex-wrap:wrap;gap:10px}
   .skill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:14px}
-  .skill:hover{border-color:rgba(34,211,238,.45)}
+  .skill:hover{border-color:rgba(251,113,133,.45)}
   .badge{display:inline-block;background:rgba(52,211,153,.12);color:var(--green);border:1px solid rgba(52,211,153,.35);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
-  .feature{border:1px solid rgba(34,211,238,.35)}
+  .feature{border:1px solid rgba(251,113,133,.35)}
   .cert-list p{padding:8px 0;border-bottom:1px solid var(--line)}
   .cert-list p:last-child{border-bottom:none}
   .quote{font-family:"Space Grotesk",sans-serif;font-size:clamp(22px,3.4vw,30px);line-height:1.35;font-weight:600;text-align:center;padding:20px 0 4px}
-  .quote em{font-style:normal;background:linear-gradient(92deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .quote em{font-style:normal;background:linear-gradient(92deg,var(--rose),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
   footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto}
@@ -144,8 +141,7 @@
   <div class="wrap hero-inner">
     <div>
       <span class="status"><i></i> Open to internships &amp; collaborations</span>
-      <div class="bn">সাইফ সিয়াম</div>
-      <h1>MD. Saif<br><span class="grad">Siam</span></h1>
+      <h1>MD. SAIF<br><span class="grad">SIAM</span></h1>
       <div class="role">Computer Science Student &amp; Aspiring AI Engineer</div>
       <p class="lede">I'm a third-year CSE student at BUBT in Dhaka, building AI tools that solve real problems — from turning long videos into viral clips, to climate-risk advice for Bangladeshi farmers.</p>
       <div class="btns">
@@ -396,12 +392,12 @@
       var dx = p.x-mouse.x, dy = p.y-mouse.y, d2 = dx*dx+dy*dy;
       if(d2 < 14400){ p.x += dx*0.004; p.y += dy*0.004; }
       ctx.beginPath(); ctx.arc(p.x,p.y,1.6,0,Math.PI*2);
-      ctx.fillStyle = 'rgba(34,211,238,.75)'; ctx.fill();
+      ctx.fillStyle = 'rgba(251,113,133,.75)'; ctx.fill();
       for(var j=i+1;j<pts.length;j++){
         var q = pts[j], ddx = p.x-q.x, ddy = p.y-q.y, dd = ddx*ddx+ddy*ddy;
         if(dd < 12100){
           ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y);
-          ctx.strokeStyle = 'rgba(129,140,248,' + (0.28*(1-dd/12100)) + ')'; ctx.lineWidth = 1; ctx.stroke();
+          ctx.strokeStyle = 'rgba(251,191,36,' + (0.28*(1-dd/12100)) + ')'; ctx.lineWidth = 1; ctx.stroke();
         }
       }
     }
